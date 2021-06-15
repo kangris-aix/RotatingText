@@ -3,7 +3,7 @@ package com.sdsmdg.harjot.rotatingtextlibrary;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.text.TextUtils;
 
 import android.view.View;
