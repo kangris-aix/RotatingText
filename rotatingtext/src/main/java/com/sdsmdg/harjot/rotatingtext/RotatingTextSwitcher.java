@@ -339,7 +339,7 @@ public class RotatingTextSwitcher extends TextView {
         if (disposable == null) {
             disposable = Observable.interval(1000 / rotatable.getFPS(), TimeUnit.MILLISECONDS, Schedulers.io())
                     .observeOn(AndroidSchedulers.mainThread())
-                    .subscribe(new Consumer<Long>() {
+                    .subscribe(new Supplier<Long>() {
                         @Override
                         public void accept(Long aLong) throws Exception {
                             invalidate();
