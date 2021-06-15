@@ -43,7 +43,7 @@ public class RotatingTextSwitcher extends TextView {
 
     private Timer updateWordTimer;
 
-    private CompositeDisposable disposables;
+    private CompositeDisposable disposables = new CompositeDisposable();
 
     private String currentText = "";
     private String oldText = "";
